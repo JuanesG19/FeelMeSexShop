@@ -1,26 +1,30 @@
 import React from "react";
+import "boxicons";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header>
-      <a href="#">
+      <Link to="/">
         <div className="logo">
           <img src="static/images/logo.png" alt="logo" width="120" />
         </div>
-      </a>
+      </Link>
 
-      <ul>
-        <li>
-          <a href="#">Usuario</a>
-        </li>
-        <li>
-          <a href="#">Idioma</a>
-        </li>
-      </ul>
+      <div className="buttonsNav">
+        <ul className="taskNav">
+          <li>
+            <Link to="/">Usuario</Link>
+          </li>
+          <li>
+            <Link to="/products">Productos</Link>
+          </li>
+        </ul>
 
-      <div className="cart">
-        <box-icon name="cart"></box-icon>
-        <span className="item__total">0</span>
+        <div className="cartIcon">
+          <box-icon name="cart"></box-icon>
+          <span className="item__total">0</span>
+        </div>
       </div>
     </header>
   );
