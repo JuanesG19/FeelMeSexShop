@@ -14,7 +14,7 @@ const Header = () => {
       <div className="buttonsNav">
         <ul className="taskNav">
           <li>
-            <Link to="/">Usuario</Link>
+            <Link to="/user">Usuario</Link>
           </li>
           <li>
             <Link to="/products">Productos</Link>

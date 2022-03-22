@@ -107,12 +107,12 @@ header .buttonsNav {
 /* ------------Products------------------ */
 .title {
   font-size: 2rem;
-  padding: 10rem 0 0 0;
+  padding: 3rem 0 0 1.2rem;
   color: #ea168e;
 }
 
 .products {
-  padding: 5rem 1rem;
+  padding: 3rem 1rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
@@ -168,7 +168,7 @@ header .buttonsNav {
   grid-template-columns: 2fr 1fr;
   gap: 1rem 3rem;
   padding: 0 1rem;
-  margin : 0.2rem;
+  margin: 0.2rem;
 }
 
 .buttom .btn {
@@ -203,4 +203,84 @@ header .buttonsNav {
 
 .buttom div a:hover {
   color: white;
+}
+
+/* ------------HomePage-------------- */
+
+.menuHomepage {
+  display: flex;
+  background-color: #612570;
+}
+
+.menuHomepage .menu {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+}
+
+.menuHomepage .menu .btnMenu {
+  color: white;
+  padding: 1.1rem;
+  display: block;
+}
+
+.menuHomepage .menu .btnMenu:hover {
+  background-color: #f0134d;
+}
+
+.menuHomepage li {
+  display: inline-block;
+  text-align: center;
+}
+
+/* ------------Slide Image-------------- */
+.slider {
+  overflow: hidden;
+}
+
+.slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation-duration: 10s;
+  animation-name: slider;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.slider figure img {
+  width: 20%;
+  float: left;
+  height: 600px;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -300%;
+  }
 }
