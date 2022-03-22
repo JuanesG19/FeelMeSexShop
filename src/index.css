@@ -284,3 +284,28 @@ header .buttonsNav {
     left: -300%;
   }
 }
+
+/* ------------Boxes-------------- */
+
+.Boxes {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.Box {
+  width: 100%;
+  height: 12rem;
+}
+
+.Boxes .Box .Content {
+  padding-top: 4rem;;
+}
+
+.Boxes .Box h3 {
+  color: white;
+}
+
+.Boxes .Box box-icon {
+  color: white;
+}

@@ -1,7 +1,6 @@
 import React from "react";
-import Header from "../components/Header";
+import Boxes from "../components/Boxes";
 import Menu from "../components/Menu";
-import Products from "../components/Products";
 import Slideimage from "../components/Slideimage";
 
 const Homepage =()=> {
@@ -9,6 +8,7 @@ const Homepage =()=> {
     <>
       <Menu/>
       <Slideimage/>
+      <Boxes/>
       <h1>Homepage</h1>
     </>
   );
