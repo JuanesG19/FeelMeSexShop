@@ -5,30 +5,33 @@ import { Link } from "react-router-dom";
 const Boxes = () => {
   return (
     <section className="Boxes">
-      <div className="Box" style={{ backgroundColor: "#f0134d" }}>
+      <Link to="/" className="Box" style={{ backgroundColor: "#f0134d" }}>
         <div className="Content">
-          <box-icon name="low-vision" rotate='180'></box-icon>
-          <h3>CONFIDENCIALIDAD</h3>
+          <img src="static/images/icons/silence.png" alt="silence" />
+          <h2>CONFIDENCIALIDAD</h2>
         </div>
-      </div>
-      <div className="Box" style={{ backgroundColor: "#612570" }}>
+      </Link>
+
+      <Link to="/" className="Box" style={{ backgroundColor: "#612570" }}>
         <div className="Content">
-          <box-icon name="package"></box-icon>
-          <h3>ENVIO A TODO EL PAIS</h3>{" "}
+          <img src="static/images/icons/box.png" alt="silence" />
+          <h2>ENVIO A TODO EL PAIS</h2>
         </div>
-      </div>
-      <div className="Box" style={{ backgroundColor: "#FF6F5E" }}>
+      </Link>
+
+      <Link to="/" className="Box" style={{ backgroundColor: "#FF6F5E" }}>
         <div className="Content">
-          <box-icon name="package"></box-icon>
-          <h3>ATENCIÓN OPORTUNA </h3>{" "}
+          <img src="static/images/icons/whatsapp.png" alt="silence" />
+          <h2>ATENCIÓN OPORTUNA </h2>
         </div>
-      </div>
-      <div className="Box" style={{ backgroundColor: "#B643CD" }}>
+      </Link>
+
+      <Link to="/" className="Box" style={{ backgroundColor: "#B643CD" }}>
         <div className="Content">
-          <box-icon name="money"></box-icon>
-          <h3>PRECIOS ASEQUIBLE</h3>{" "}
+          <img src="static/images/icons/dinero.png" alt="silence" />
+          <h2>PRECIOS ASEQUIBLE</h2>
         </div>
-      </div>
+      </Link>
     </section>
   );
 };
